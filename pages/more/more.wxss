@@ -1,0 +1,35 @@
+/* pages/more/more.wxss */
+
+page {
+  background-color: #efeff4;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #efeff4; */
+  font-size: 30rpx;
+  color: #4d99af;
+}
+
+.about {
+  text-align: center;
+  background-color: #fff;
+  border-top: 1rpx solid #dddddf;
+  border-bottom: 1rpx solid #dddddf;
+}
+
+navigator {
+  border-bottom: 1rpx solid #dddddf;
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+}
+
+.one {
+  border-bottom: none;
+}
+
+.out {
+  margin-top: 30rpx;
+  padding: 20rpx 0;
+}

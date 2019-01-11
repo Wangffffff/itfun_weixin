@@ -1,0 +1,41 @@
+/* pages/date/date.wxss */
+
+page {
+  font-size: 28rpx;
+  margin: 0 20rpx;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme {
+  color: #1f99b0;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 18px 0 26rpx 28rpx;
+}
+
+.created-at {
+  color: #8d9091;
+  padding: 10rpx 0 10rpx 48rpx;
+}
+
+.pic {
+  width: 93%;
+  height: 280rpx;
+  text-align: center;
+}
+
+.photo {
+  width: 93%;
+  height: 100%;
+  border-radius: 18rpx;
+  box-shadow: 3rpx 6rpx 1rpx #000;
+}
+
+.title {
+  padding: 10rpx 0 0 48rpx;
+  margin-bottom: 80rpx;
+}

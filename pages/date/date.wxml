@@ -1,0 +1,13 @@
+<!--pages/date/date.wxml-->
+<view class='courses'>
+  <view class='theme'>课程日历</view>
+  <block wx:for='{{courses}}' wx:key='unique'>
+    <navigator url="../courses/courses?id={{item.id}}" hover-class="navigator-hover">
+      <view class='created-at'>{{item.created_at}}</view>
+      <view class='pic'>
+        <image src="{{item.photo}}" class="photo" mode="aspectFit"></image>
+      </view>
+      <view class='title'>{{item.name}}</view>
+    </navigator>
+  </block>
+</view>

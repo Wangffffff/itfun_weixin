@@ -1,0 +1,17 @@
+<!--pages/more/more.wxml-->
+<view class='more'>
+  <view class='about' style='margin-top: 30rpx;'>
+    <navigator url='../../pages/web/web?src={{url1}}'>ITFun会员</navigator>
+    <navigator url='../../pages/web/web?src={{url2}}'>关于ITFun的概况</navigator>
+    <navigator class='one' url='../../pages/web/web?src={{url3}}'>长乐未央</navigator>
+  </view>
+  <view style='font-size:24rpx;color:#7D7D82;margin:40rpx 0 0 20rpx'>线下培训</view>
+  <view class='taining about'>
+    <navigator url='../../pages/web/web?src={{url4}}'>培训简介</navigator>
+    <navigator url='../../pages/web/web?src={{url5}}'>Web前端培训</navigator>
+    <navigator class='one' url='../../pages/web/web?src={{url6}}'>PHP培训</navigator>
+  </view>
+  <view class='out about'>
+    <view bindtap='out'>安全退出</view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/navigation/navigation.wxml-->
+<navigator url="../login/login" hover-class="navigator-hover">
+  <text class='login'>登录</text>
+  <text class='info'>您必须登录后才能访问</text>
+</navigator>

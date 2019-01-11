@@ -1,0 +1,28 @@
+<!--pages/search/search.wxml-->
+<view class='searching'>
+  <form bindsubmit='search'>
+    <view class='search-for'>
+      <view class="search" style='width: 80%;'>
+        <view class="search_arr">
+          <icon class="searchcion" size='20' type='search'></icon>
+          <input name='keyword' placeholder="请输入关键字" />
+        </view>
+      </view>
+      <button class='sousuo' formType='submit'>搜索</button>
+    </view>
+  </form>
+  <view style='margin:20rpx;font-size:26rpx;color:#808080;'>搜索结果</view>
+
+</view>
+<navigator url='../courses/courses?id={{item.id}}' wx:for='{{courses}}' wx:key='courses'>
+  <view class='courses'>
+    <view class='pic'>
+      <image src="{{item.photo}}" class="photo" mode="aspectFit" />
+    </view>
+    <view class='name' style='margin: 10rpx 0;'>{{item.name}}</view>
+    <view class='body'>
+      <view wx:if='{{item.body==null}}'>暂无内容</view>
+      <view wx:else> {{item.body}}</view>
+    </view>
+  </view>
+</navigator>

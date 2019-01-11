@@ -1,0 +1,41 @@
+/* pages/chapters/chapters.wxss */
+
+/**基础风格样式**/
+@import '/towxml/style/main.wxss';
+
+/**如果页面有动态主题切换，则需要将使用到的样式全部引入**/
+
+/**主题配色（浅色样式）**/
+@import '/towxml/style/theme/light.wxss';
+
+/**主题配色（深色样式）**/
+@import '/towxml/style/theme/dark.wxss';
+
+.chapter-notes {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 30rpx;
+}
+
+.course-list {
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #d4d1d9;
+  border-radius: 50rpx;
+  width: 28%;
+  font-size: 28rpx;
+  height: 50rpx;
+}
+
+.h2w__main {
+  padding-top: 20rpx;
+}
+
+.h2w {
+  margin-top: 510rpx;
+}

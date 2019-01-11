@@ -1,0 +1,63 @@
+<!--pages/courses/courses.wxml-->
+<view class='all'>
+  <view class='courses'>
+    <view class='pic'>
+      <image src="{{course.photo}}" class="photo" mode='aspectFit' />
+    </view>
+    <view class='total'>全{{chapters.length}}回</view>
+    <view class='name' style='margin: 10rpx 0 20rpx 20rpx;'>{{course.name}}</view>
+
+    <view>
+      <view class="long-dec {{isFold?'hide':'show'}}">
+        <rich-text class='body' nodes="{{course.body}}"></rich-text>
+      </view>
+      <image class="arrow" src='../../images/click1.png' bindtap="showAll"></image>
+    </view>
+  </view>
+  <view style='margin-top: 80rpx;'>
+    <view class='chapters' wx:for='{{chapters}}' wx:key='chapters' wx:for-index='index'>
+    <!-- index 取索引值 -->
+      <navigator url="../chapters/chapters?id={{item.id}}" hover-class="navigator-hover">
+        <view class='chapters-item'>
+          <view class='left'>
+            <image class='icon' src='../../images/icon.png'></image>
+          </view>
+          <view class='between'>
+            <view class='num' style='font-size: 30rpx;'>{{index+1}}</view>
+          </view>
+          <view class='right'>
+            <view class='top'>{{item.title}}</view>
+            <view class='bottom'>
+              <view class='publish'>
+                <view class="publish-item" style="background-color:{{item.publish == true ? '#4996ad' :  '#DE7F75' }}">{{item.publish == true ? '免费' : '未发布' }}</view>
+              </view>
+              <view class='updatedd_at'>{{item.updated_at}}</view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class='teacher'>
+    <view class='avatars' style='width: 140rpx;'>
+      <image src="{{teacher.avatar}}" class="avatar" />
+    </view>
+    <view class='info'>
+      <view class='fullname'>{{teacher.fullname}}</view>
+      <view class='company'>{{teacher.company}}</view>
+    </view>
+  </view>
+  <view class='relation_courses'>
+    <view class='groom'>相关课程</view>
+    <scroll-view class='scroll' scroll-x="true">
+      <view class='scroll-items'>
+        <view class='scroll-item' wx:for="{{relation_courses}}" wx:key='relation_courses'>
+          <navigator url="../courses/courses?id={{item.id}}" hover-class="navigator-hover">
+            <image src="{{item.photo}}" class="pic1" mode="scaleToFill" />
+            <view class='scroll-title'>{{item.title}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

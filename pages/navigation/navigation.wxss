@@ -1,0 +1,22 @@
+/* pages/navigation/navigation.wxss */
+.login{
+  width: 260rpx;
+  height: 80rpx;
+  background-color: #4996AD;
+  text-align: center;
+  color: #E8F2F4;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  letter-spacing: 10rpx;
+  border-radius: 10rpx;
+}
+
+.info{
+  position: absolute;
+  top: 53%;
+  left: 36%;
+  font-size: 24rpx;
+}

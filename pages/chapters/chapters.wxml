@@ -1,0 +1,16 @@
+<!--pages/chapters/chapters.wxml-->
+<view class='chapter-notes'>
+  <video src="{{chapter.video}}" poster='{{chapter.photo}}' style='margin:auto auto'></video>
+  <view class='course-list'>
+    <view class='pic' style='margin-left:10px;margin-right: 3rpx;'>
+      <image src="../../images/list.png" class="icon" style='width:50rpx;height:50rpx;margin:auto auto' />
+    </view>
+    <view class='info' style='line-height:50rpx;'>课程列表 </view>
+  </view>
+</view>
+<import src="/towxml/entry.wxml" />
+<scroll-view scroll-y style='height:1600rpx;'>
+  <view class='body'>
+    <template is="entry" data="{{...article}}" />
+  </view>
+</scroll-view>

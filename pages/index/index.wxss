@@ -1,0 +1,147 @@
+/**index.wxss**/
+
+.find {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  box-shadow: 1rpx 1rpx 1rpx #ddddde;
+}
+
+.icon-item1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-pic {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.theme {
+  color: #1f99b0;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 58px 0 26rpx 28rpx;
+}
+
+.groom {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin: 0 0 14rpx 28rpx;
+}
+
+.swiper {
+  height: 460rpx;
+}
+
+.pic {
+  width: 100%;
+  height: 300rpx;
+  text-align: center;
+}
+
+.pic image {
+  width: 93%;
+  height: 100%;
+}
+
+.one {
+  border-radius: 14rpx;
+  box-shadow: 3rpx 6rpx 1rpx #000;
+}
+
+.created-at {
+  color: #66b9c9;
+  font-size: 20rpx;
+  text-align: left;
+  margin: 10rpx 0 10rpx 28rpx;
+}
+
+.course-title {
+  font-size: 28rpx;
+  text-align: left;
+  margin-left: 28rpx;
+}
+
+.course-desc {
+  font-size: 28rpx;
+  text-align: left;
+  margin-left: 28rpx;
+}
+
+.point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 93%;
+  height: 20rpx;
+}
+
+.point_common {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  margin-right: 10rpx;
+  background-color: #c7c5cb;
+}
+
+.activehover {
+  background-color: #66b9c9;
+}
+
+.intercept {
+  width: 93%;
+  margin: 40rpx auto;
+  border-bottom: 2rpx solid #c7c5cb;
+}
+
+.scroll {
+  white-space: nowrap;
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.scroll-item {
+  width: 50%;
+  height: 320rpx;
+  display: inline-block;
+  margin-right: 30rpx;
+}
+
+.scroll-pic {
+  width: 360rpx;
+  height: 220rpx;
+}
+
+.scroll-name {
+  width: 340rpx;
+  white-space: normal;
+  height: 60rpx;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.nc-date {
+  font-size: 20rpx;
+  color: #8d9091;
+  padding: 10rpx 0;
+}
+
+.likes_courses {
+  margin-top: 100rpx;
+}
+
+.recommended_courses {
+  margin-top: 50rpx;
+}

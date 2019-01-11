@@ -1,0 +1,19 @@
+/* pages/news/news.wxss */
+.all{
+  margin: 30rpx 20rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.notices{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #D4D3D6;
+  margin: 20rpx 0;
+}
+
+.time{
+  text-align: right;
+  font-size: 26rpx;
+  padding: 20rpx;
+  color: #929496;
+}

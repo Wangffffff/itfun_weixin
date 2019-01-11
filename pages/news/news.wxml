@@ -1,0 +1,9 @@
+<!--pages/news/news.wxml-->
+<view class='all'>
+  <view class='notices' wx:for='{{notices}}' wx:key='notices'>
+    <navigator url=''>
+    <view class='title'>{{item.title}}</view>
+    <view class='time'>{{item.created_at}}</view>
+    </navigator>
+  </view>
+</view>

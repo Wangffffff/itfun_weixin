@@ -1,0 +1,176 @@
+/* pages/courses/courses.wxss */
+
+.all {
+  display: flex;
+  flex-direction: column;
+  font-size: 36rpx;
+  margin: 0;
+  padding: 0;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 0 0 20rpx;
+  background-color: #4996ad;
+  width: 120rpx;
+  height: 45rpx;
+  color: #f7fbfc;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+}
+
+.photo {
+  width: 100%;
+  height: 320rpx;
+}
+
+.long-dec {
+  margin: 0  20rpx 10rpx 20rpx;
+  padding-left: 20rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  opacity: 0.7;
+}
+
+.hide {
+  display: -webkit-box;
+}
+
+.show {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  width: 40rpx;
+  height: 43rpx;
+  left: 48%;
+  transform: translate(-50%);
+}
+
+.chapters-item {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20rpx;
+  padding: 26rpx 0;
+  border-bottom: 1rpx solid #cccbcf;
+}
+
+.left {
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.between {
+  margin: 0 30rpx 0 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 570rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+
+.top{
+  padding:10rpx 0; 
+}
+
+.bottom {
+  margin: 10rpx 0;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.publish {
+  width: 100rpx;
+  text-align: center;
+}
+
+.publish-item {
+  width: 80rpx;
+  height: 30rpx;
+  color: #f7fbfc;
+  font-size: 22rpx;
+  border-radius: 10rpx;
+}
+
+.teacher {
+  margin: 60rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 80rpx;
+  margin-left: 14rpx;
+}
+
+.fullname {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.company {
+  font-size: 24rpx;
+  margin: 20rpx 0;
+}
+
+.relation_courses {
+  background-color: #f0eff0;
+  height: 550rpx;
+  font-size: 30rpx;
+}
+
+.groom {
+  margin: 30rpx 0 30rpx 28rpx;
+}
+
+.scroll-items {
+  display: flex;
+}
+
+.scroll-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 360rpx;
+  border: 20rpx solid #f0eff0;
+}
+
+.pic1 {
+  width: 360rpx;
+  height: 220rpx;
+}
+
+.scroll-title {
+  width: 320rpx;
+  font-size: 26rpx;
+  margin: 20rpx;
+}

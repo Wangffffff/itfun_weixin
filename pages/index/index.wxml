@@ -1,0 +1,93 @@
+<!--index.wxml-->
+<view class='find'>
+
+  <!-- 图标导航栏 -->
+  <view class='nav-icon'>
+    <view class='icon-item' style='margin-left:16rpx;'>
+      <navigator url='../news/news'>
+        <image class='nav-pic'src='../../images/news.png'></image>
+      </navigator>
+    </view>
+    <view class='icon-item1' style='margin-right:16rpx;'>
+      <navigator url='../search/search'>
+        <image class='nav-pic' style='margin-right:20rpx;' src='../../images/search.png'></image>
+      </navigator>
+       <navigator url='../more/more'>
+        <image class='nav-pic' src='../../images/more.png'></image>
+      </navigator>
+    </view>
+  </view>
+
+  <view class='theme'>发现</view>
+
+  <!-- 推荐课程 -->
+  <view class='slide_courses'>
+    <view class='groom'>推荐课程</view>
+    <swiper class="swiper" current="{{currentSwiper}}" bindchange='swiperChange'>
+      <block wx:for="{{slide_courses}}" wx:key="unique">
+        <navigator url="../courses/courses?id={{item.id}}" hover-class="navigator-hover">
+          <swiper-item>
+            <view class='pic'>
+              <image src="{{item.photo}}" class="slide-image one" mode="aspectFit" />
+              <view class='created-at'>{{item.created_at}}</view>
+              <view class='course-title'>{{item.name}}</view>
+              <view class='course-desc'>{{item.desc}}</view>
+            </view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+    <view class='point'>
+      <block wx:for="{{slide_courses}}" wx:key="unique">
+        <view class="point_common{{index == currentSwiper ? ' activehover ':''}} "></view>
+      </block>
+    </view>
+    <view class='intercept'></view>
+  </view>
+
+  <!-- 课程发布日历 -->
+  <view class='new_courses'>
+    <view class='groom'>课程发布日历</view>
+    <scroll-view class='scroll' scroll-x="true">
+      <block wx:for="{{new_courses}}" wx:key="unique">
+        <view class='scroll-item'>
+          <navigator url="../courses/courses?id={{item.id}}" hover-class="navigator-hover">
+            <image class='scroll-pic one' src="{{item.photo}}" mode="scaleToFill" />
+            <view class='scroll-name'> {{item.name}}</view>
+            <view class='nc-date'>{{item.updated_at}}</view>
+          </navigator>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <!-- 最受欢迎的课程 -->
+  <view class='likes_courses'>
+    <view class='groom'>最受欢迎的课程</view>
+    <scroll-view class='scroll' scroll-x="true">
+      <block wx:for="{{likes_courses}}" wx:key="unique">
+        <view class='scroll-item'>
+          <navigator url="../courses/courses?id={{item.id}}" hover-class="navigator-hover">
+            <image class='scroll-pic one' src="{{item.photo}}" mode="scaleToFill" />
+            <view class='scroll-name'> {{item.name}}</view>
+          </navigator>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <!-- 入门课程 -->
+  <view class='recommended_courses'>
+    <view class='groom'>入门课程</view>
+    <scroll-view class='scroll' scroll-x="true">
+      <block wx:for="{{recommended_courses}}" wx:key="unique">
+        <view class='scroll-item'>
+          <navigator url="../courses/courses?id={{item.id}}" hover-class="navigator-hover">
+            <image class='scroll-pic one' src="{{item.photo}}" mode="scaleToFill" />
+            <view class='scroll-name'> {{item.name}}</view>
+          </navigator>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

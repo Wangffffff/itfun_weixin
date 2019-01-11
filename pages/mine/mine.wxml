@@ -1,0 +1,52 @@
+<!--pages/mine/mine.wxml-->
+<scroll-view style=' display: flex;'>
+  <view class='navigation'>
+    <view style='margin-left:10rpx;' class="navigation-item{{currentTab==0 ? ' on' : ''}}" data-current='0' bindtap='swichNav'>我的主页</view>
+    <view class="navigation-item{{currentTab==1 ? ' on' : ''}}" data-current='1' bindtap='swichNav'>喜欢的课程</view>
+    <view class="navigation-item{{currentTab==2 ? ' on' : ''}}" data-current='2' bindtap='swichNav'>观看历史</view>
+  </view>
+</scroll-view>
+
+<swiper current='{{currentTap}}' duration='300' bindchange='bindChange' style='height:1000rpx'>
+  <swiper-item>
+    <view class='mine'>
+      <view class='head'>
+        <view class='pic'>
+          <image src='{{user.photo}}'></image>
+        </view>
+        <view class='info'>
+          <view class='name'>{{user.fullname}}</view>
+          <view class='id'>
+            <text class='id-title'>学籍编号:</text>
+            <text class='num'>{{user.id}}</text>
+          </view>
+          <view class='premium'>{{user.premium ==false ? '免费会员' : '高级会员' }}</view>
+        </view>
+      </view>
+      <view class='email style other'>
+        <text class='title'>电子邮箱</text>
+        <text class='content'>{{user.email}}</text>
+      </view>
+      <view class='sex style other'>
+        <text class='title' style='letter-spacing:61rpx'>性别</text>
+        <text class='content'>{{sex}}</text>
+      </view>
+      <view class='company style other'>
+        <text class='title' style='letter-spacing:61rpx'>公司</text>
+        <view class='content'>
+          <view wx:if='{{user.company==null}}'></view>
+          <view wx:else> {{user.company}}</view>
+        </view>
+      </view>
+      <view class='introduce style'>
+        <text class='title'>自我介绍</text>
+        <view class='textarea'>
+          <view wx:if='{{user.introduce==null}}'></view>
+          <view wx:else> {{user.introduce}}</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item></swiper-item>
+   <swiper-item></swiper-item>
+</swiper>
